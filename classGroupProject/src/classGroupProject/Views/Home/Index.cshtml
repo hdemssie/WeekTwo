@@ -1,0 +1,21 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml"ng-app="CalcApp">
+<head>
+    <title></title>
+</head>
+<body ng-controller="Calcontroller as c">
+    <input type="number" id="a" ng-model="a"/>
+    <input type="number" id="b" ng-model="b"/>
+    <br />
+    <button ng-click="c=a+b"> + </button>
+    <button ng-click="c=a-b"> - </button>
+    <button ng-click="c=a*b"> * </button>
+    <button ng-click="c=a/b"> / </button>
+    <br />
+    <input type="number" id="c" ng-model="c"/> 
+    
+
+    <script src="~/lib/angular/angular.min.js"></script>
+    <script src="~/ngApp/app.js"></script>
+   
+</body>
+</html>

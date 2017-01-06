@@ -1,0 +1,59 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml" ng-app="StoreProductApp">
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+</head>
+<body ng-controller="StoreProductController as C">
+
+    <table class="table table-bordered table-striped">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Is Expencive</th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+            <tr>
+                <th colspan="3"> Food </th>
+            </tr>
+
+            <tr ng-repeat="storeProduct in C.food">
+                <td>{{storeProduct.name}}</td>
+                <td>{{storeProduct.price}}</td>
+                <td>{{storeProduct.isExpensive}}</td>
+            </tr>
+
+            <tr>
+                <th colspan="3"> Clothes </th>
+            </tr>
+
+            <tr ng-repeat="storeProduct in C.clothes">
+                <td>{{storeProduct.name}}</td>
+                <td>{{storeProduct.price}}</td>
+                <td>{{storeProduct.isExpensive}}</td>
+            </tr>
+
+            <tr>
+                <th colspan="3">Toys </th>
+            </tr>
+
+            <tr ng-repeat="storeProduct in C.toys">
+                <td>{{storeProduct.name}}</td>
+                <td>{{storeProduct.price}}</td>
+                <td>{{storeProduct.isExpensive}}</td>
+            </tr>
+          
+        </tbody>
+
+    </table>
+  
+
+    <script src="~/lib/angular/angular.min.js"></script>
+    <script src="~/ngApp/app.js"></script>
+    <script src="~/ngApp/controller.js"></script>
+
+</body>
+</html>

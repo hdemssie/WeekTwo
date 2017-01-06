@@ -1,0 +1,35 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml" ng-app="PetApp">
+<head>
+    
+    <title>Pet Store</title>
+    <link rel="stylesheet" type="text/css" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+</head>
+<body ng-controller="PetListController as c ">
+
+    <table class="table table-bordered table-striped">
+        <thead>
+            <tr>
+                <th>Dog</th>
+                <th>Bunnie</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="pet in c.dog">
+                <td>{{pet.name}}</td>
+                <td>{{pet.color}}</td>
+                <td><img ng-src="images/{{pet.img}}" /></td>
+            </tr>
+        
+            <tr ng-repeat="pet in c.bunnie">
+                <td>{{pet.name}}</td>
+                <td>{{pet.size}}</td>
+                <td><img ng-src="images/{{pet.img}}" /></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script src="~/lib/angular/angular.min.js"></script>
+    <script src="~/ngApp/app.js"></script>
+    <script src="~/ngApp/controller.js"></script>
+</body>
+</html>

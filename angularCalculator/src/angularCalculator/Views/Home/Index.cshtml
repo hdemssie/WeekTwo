@@ -1,0 +1,29 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml"ng-app="DataBindingApp">
+<head>
+    <title>Calculator</title>
+ </head>
+<body ng-controller="myController as xx">
+   
+  
+    <h1>Calculator</h1>
+    
+   
+        <input ng-model="x" type="text" /> <br>
+        <input ng-model="y" type="text" /> <br>
+
+        <input type="text" ng-model="result" />
+
+    
+        <div>
+
+            <input type="button" ng.click="add()" value="add" />
+            <input type="button" ng.click="sub()" value="sub" />
+            <input type="button" ng.click="mult()" value="mult" />
+            <input type="button" ng.click="div()" value="div" />
+           
+        </div>
+    
+    <script src="~/lib/angular/angular.min.js"></script>
+    <script src="~/ngApp/app.js"></script>
+</body>
+</html>

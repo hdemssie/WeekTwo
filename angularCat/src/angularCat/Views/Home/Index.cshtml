@@ -1,0 +1,32 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml" ng-app="AngularCarApp">
+<head>
+    <title>Car-App</title>
+
+
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap-theme.min.css" />
+<link rel="stylesheet" href="~/css/site.css"/>
+
+</head>
+<body ng-controller="CarController as cc">
+    <table class="table table-striped table-bordered">
+        <thead>
+            <tr>
+                <th>Year</th>
+                <th>Make</th>
+                <th>Model</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr ng-repeat="car in cc.cars">
+                <td>{{car.year}}</td>
+                <td>{{car.make}}</td>
+                <td>{{car.model}}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script src="~/lib/angular/angular.min.js"></script>
+    <script src="~/ngApp/app.js"></script>
+</body>
+</html>

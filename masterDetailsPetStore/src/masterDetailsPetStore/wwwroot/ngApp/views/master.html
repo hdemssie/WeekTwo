@@ -1,0 +1,45 @@
+﻿<h1> Master Details for Pet store</h1>
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>Dog</th>
+           
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="pet in c.dog">
+            <td>
+                <a ui-sref="details({id: Pet.id})">{{pet.name}}</a>
+            </td>
+
+            <td>
+                <a ui-sref="details({id: Pet.id})">{{pet.color}}</a>
+            </td>
+
+            <td>
+                <a ui-sref="details({id: Pet.id})"><img ng-src="images/{{pet.img}}" /></a>
+            </td>
+        </tr>
+   
+    </tbody>
+   
+        <tr>
+
+            <th>Bunnie</th>
+        <tr ng-repeat="pet in c.bunnie">
+            <td>
+                <a ui-sref="details({id: PetListController.id})">{{pet.name}}</a>
+            </td>
+
+            <td>
+                <a ui-sref="details({id: PetListController.id})">{{pet.size}}</a>
+            </td>
+
+            <td>
+                <a ui-sref="details({id: PetListController.id})"><img ng-src="images/{{pet.img}}" /></a>
+            </td>
+
+        </tr>
+      
+</table>

@@ -1,0 +1,27 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml" ng-app="MovieApp">
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+</head>
+<body ng-controller="MovieListController as c ">
+
+    <table class="table table-bordered table-striped">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Director</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="movie in c.movies">
+                <td>{{movie.title}}</td>
+                <td>{{movie.director}}</td>
+            </tr>
+        </tbody>
+    </table>
+  
+    <script src="~/lib/angular/angular.min.js"></script>
+    <script src="~/ngApp/app.js"></script>
+    <script src="~/ngApp/controller.js"></script>
+</body>
+</html>

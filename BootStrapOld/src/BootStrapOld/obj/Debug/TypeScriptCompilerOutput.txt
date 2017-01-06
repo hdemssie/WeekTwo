@@ -1,0 +1,3 @@
+C:\programming\FullStackDotNet\weekTwo\BootStrapOld\src\BootStrapOld\wwwroot\ngApp\app.js
+C:\programming\FullStackDotNet\weekTwo\BootStrapOld\src\BootStrapOld\wwwroot\ngApp\controllers\controllers.js
+C:\programming\FullStackDotNet\weekTwo\BootStrapOld\src\BootStrapOld\wwwroot\ngApp\services\services.js
